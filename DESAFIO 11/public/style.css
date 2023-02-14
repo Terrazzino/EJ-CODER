@@ -1,0 +1,222 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.titulo{
+    color: darkblue;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px 0;
+}
+.input{
+    text-align: center;
+    background-color: azure;
+    border: 1px solid lightgray;
+}
+
+.btn{
+    background-color: lightblue;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+    transition: 0.25s ease-in-out;
+}
+
+.btn:hover{
+    transition: all 0.25s ease-in-out;
+    background-color: orange;
+}
+
+.table{
+    width: fit-content;
+}
+.tr1{
+    background-color:cadetblue;
+}
+.tr2{
+    background-color:lightskyblue;
+    transition: all 0.5s, ease-in-out;
+}
+.th1{
+    border-radius: 5px;
+    width: 250px;
+}
+.th2{
+    border-radius: 5px;
+    width: 75px;
+}
+.th3{
+    border-radius: 5px;
+    width: 150px;
+}
+.td1{
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+}
+.td2{
+    border-radius: 5px;
+    width: 75px;
+    text-align: center;
+}
+.td3{
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+.tr2:hover{
+    transition: all 0.5s, ease-in-out;
+    background-color:orange;
+}
+.img{
+    width: 50px;
+}
+.inputs{
+    margin: 10px 0
+}
+
+.chat-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px 0;
+    align-items: center;
+    width: 90%;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+/* parametros específicos para la las tarjetas de mensajería. */
+
+.messages-container{
+    display: flex;
+    border: 1px solid darkgray;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.mensajes{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.message-cont{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 3px 0px;
+    border: 1px solid darkcyan;
+    padding: 3px;
+    border-radius: 7px;
+}
+
+.messenger{
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar-img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.avatar-container{
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.messenger-card{
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    justify-content: center;
+}
+
+.mensaje{
+    border: 1px solid gray;
+    margin: 3px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+/* Login */
+
+.login {
+    background-color: lightsteelblue;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.login-title{
+    color: darkblue;
+}
+
+.bienvenida-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: palegreen;
+    width: 750px;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.bienvenida{
+    color: darkgreen;
+}
+
+.unlog-btn{
+    height: 50px;
+    color: black;
+    font-weight: bolder;
+    background-color:lightskyblue;
+    border: none;
+    border-radius: 7px;
+    transition: all 0.5s, ease-in-out;
+}
+
+.unlog-btn:hover{
+    transition: all 0.5s, ease-in-out;
+    background-color: orange;
+}
+
+.despedida-container{
+    display: flex;
+    justify-content: center;
+    background-color: lightskyblue;
+    width: 70%;
+    border-radius: 7px;
+}
+
+.despedida{
+    color: darkblue;
+}
+
+.error {
+    color: white;
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 7px;
+}

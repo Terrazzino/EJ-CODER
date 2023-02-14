@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="http://localhost:8080/socket.io/socket.io.js"></script>
+    <title>{{titulo}}</title>
+</head>
+
+<body class="body">
+    {{#if messages.error }}
+    <h3 class="error">{{messages.error}}</h3>
+    {{/if}}
+    <form id="login-form" class="login" action="/login" method="POST" >
+ <h2 class="login-title">Login de usuario</h2>
+        <label for="email">ingrese su email</label>
+        <input class="input" type="text" id="email" name="email" placeholder="jose@gmail.com" required>
+        <label for="password">ingrese su password</label>
+        <input class="input" type="password" id="password" name="password" required>
+        <button class="btn" id="btn" type="submit">Ingresar</button>
+    </form>
+    <button class="btn" onclick="location.href='/register'" type="button">
+         Ir a Register</button>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="http://localhost:8080/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.2/dist/normalizr.browser.min.js"></script>
+    <title>{{titulo}}</title>
+</head>
+
+<body class="body">
+    <form class="bienvenida-container" id="unlog-form" action="/logout" method="GET">
+        <h1 class="bienvenida">Bienvenido! {{email}}</h1>
+        <button class="unlog-btn" type="submit">Desloguear</button>
+    </form>
+    <form class="form" onsubmit="return addProducto(this)">
+        <h4>Complete los campos a continuación</h4>
+        <input class="input" id="title" type="text" placeholder="título">
+        <input class="input" id="price" type="number" min="0.1" step=".01" placeholder="precio">
+        <input class="input" id="thumbnail" type="text" placeholder="foto">
+        <input class="btn" value="Enviar" type="submit">
+    </form>
+    <table>
+        <tr class="tr1">
+            <th class="th1">NOMBRE</th>
+            <th class="th2">PRECIO</th>
+            <th class="th3">FOTO</th>
+        </tr>
+    </table>
+    <table id="products-container" class="table">
+    </table>
+    <div class="chat-container">
+        <div class="form">
+            <h4>Centro de Mensajes</h4>
+            <label for="email">email</label>
+            <input class="inputs" type="email" id="email" placeholder="jose@gmail.com">
+            <label for="name">nombre</label>
+            <input class="inputs" type="text" id="name" placeholder="josé">
+            <label for="apellido">apellido</label>
+            <input class="inputs" type="text" id="apellido" placeholder="Hernandez">
+            <label for="edad">edad</label>
+            <input class="inputs" type="number" id="edad" placeholder="18">
+            <label for="alias">alias</label>
+            <input class="inputs" type="text" id="alias" placeholder="JosHern">
+            <label for="thumbnail">url avatar</label>
+            <input class="inputs" type="text" id="thumbnail-chat" placeholder="url">
+            <label for="mensaje">mensaje</label>
+            <input class="inputs" type="text" id="texto" placeholder="Tu mensaje">
+            <button id="btn" onclick="addMessage()">Enviar</button>
+        </div>
+        <table>
+            <div class="messages-container">
+                <h4 id="compression"></h4>
+                <div class="mensajes" id="parrafo"></div>
+            </div>
+    </div>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
